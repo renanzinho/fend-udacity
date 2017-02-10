@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Testando srcset e vw</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				width: 100vw;
+			}
+			@media screen and (max-width: 500px) {
+				img {
+					width: 50vw;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				img {
+					width: 30vw;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<img src="image-src.png" srcset="images/image-1x.png 1x, images/image-2x.png 2x,
+                                 images/image-3x.png 3x, images/image-4x.png 4x">
+	</body>
+</html>
