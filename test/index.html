@@ -9,16 +9,25 @@
 				margin: 0;
 				padding: 0;
 			}
-			img{
-				width: 50vw
+			img {
+				width: 100vw;
 			}
+			@media screen and (max-width: 500px) {
+				img {
+					width: 50vw;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				img {
+					width: 30vw;
+				}
+			}
+
 
 
 		</style>
 	</head>
 	<body>
-		<img src="images/ph360.png" srcset="ph360.png 360w, images/ph560.png 560w" sizes="(max-width: 500px) 33.3vw, 100vw">
-		
-		
+		<img src="images/ph360.png" srcset="images/ph360.png 360w, images/ph560.png 560w, images/ph1024.png 1024w" sizes="(max-width: 500px) 50vw, (max-width:600px) 30vw, 100vw">
 	</body>
 </html>
